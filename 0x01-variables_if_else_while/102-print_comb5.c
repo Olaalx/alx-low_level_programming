@@ -6,33 +6,33 @@
  * Description: print all possible diffrent
  *		combination of two-two digit
  *
- * Return: Always 0 (success)
+ * Return: 0
 */
 
 int main(void)
 {
-	int firstDigit = 0, secondDigit;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
-		secondDigit = firstDigit;
-		while (secondDigit <= 99)
+		seconDigit = firstDigit;
+		while (seconDigit <= 99)
 		{
 			if (secondDigit != firstDigit)
 			{
 				putchar((firstDigit / 10) + 48);
 				putchar((firstDigit % 10) + 48);
 				putchar(' ');
-				putchar((secondDigit / 10) + 48);
-				putchar((secondDigit % 10) + 48);
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
-				if (firstDigit != 98 || secondDigit != 98)
+				if (firstDigit != 98 || seconDigit != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			secondDigit++;
+			seconDigit++;
 		}
 		firstDigit++;
 	}
