@@ -3,18 +3,18 @@
 /**
  * main - Entry point
  *
- * Description: print _putchar using putchar prototype
+ * Description: prints _putchar using putchar prototype
  *
- * Return: Always 0 (success)
+ * Return: 0
 */
-int main(void);
-{
-	char str[] = "_putchar";
-	int ch;
 
-	for (ch = 0; ch < 8; ch++)
-		_putchar(str[ch]);
-	_putchar('\n');
-
-	return (0);
+int main(void)
 {
+        char str[] = "_putchar";
+        int ch;
+
+        for (ch = 0; ch < 8; ch++)
+                _putchar(str[ch]);
+        _putchar('\n');
+        return (0);
+}
