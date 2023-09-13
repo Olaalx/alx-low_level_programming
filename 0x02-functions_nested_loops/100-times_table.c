@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_time_table - prints time tabble of n
+ * print_time_table - prints time table of n
+ *
+ * Description: to print time table
  *
  * @n: take number inputs
 */
@@ -14,12 +16,12 @@ void print_times_table(int n)
 		for (num = 0; num <= n; ++num)
 		{
 			_putchar(48);
-			for (mult = 1; mult = <= n; ++mult)
+			for (mult = 1; mult <= n; ++mult)
 			{
 				_putchar(',');
 				_putchar(' ');
 
-				prod num * mult;
+				prod = num * mult;
 
 				if (prod <= 9)
 					_putchar(' ');
