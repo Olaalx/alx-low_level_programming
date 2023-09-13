@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: print _putchar using putchar prototype int _putchar(char c)
+ * Description: print _putchar using putchar prototype
  *
  * Return: Always 0 (success)
 */
