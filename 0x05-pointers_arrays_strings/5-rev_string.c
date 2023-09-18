@@ -5,24 +5,25 @@
  *
  * @s: string parameter input
  *
- * Return: Nothing
+ * Return: 0
 */
 
 void rev_string(char *s)
 {
-	int l, i;
+	int l, i, half;
 	char temp;
 
-	/*find string length without null char*/
-	for (l = 0; s[l] != '\0'; ++l)
+	for (l = 0; s[l] != '\0'; l++)
+	;
+	i =0;
+	half = l / 2;
 
-
-	/*swap the string by looping to half the string*/
-	for (i = 0; i < l / 2; i++)
+	while (half--)
 	{
-		temp = s[i];
-		s[i] = s[l - 1 - i]; /*-1 becuase the array starts from 0*/
-		s[l - 1 - i] = temp;
+		temp = s[l - i - 1];
+		s[l - z - 1] = s[i];
+		s[i] = temp;
+		i++;
 	}
 }
 
