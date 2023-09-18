@@ -21,7 +21,7 @@ void rev_string(char *s)
 	while (half--)
 	{
 		temp = s[l - i - 1];
-		s[l - z - 1] = s[i];
+		s[l - i - 1] = s[i];
 		s[i] = temp;
 		i++;
 	}
