@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *rot13 - function that encodes a string using rot13.
+ * rot13 - function that encodes a string using rot13.
  *@s: input string
  *Return: encoded string
 */
@@ -9,22 +10,19 @@
 char *rot13(char *s)
 {
 	int i;
-
-	char rot13[] = "abcdefghijklmnobqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *ptr = s;
-
-	while (*s)
+	int j;
+	char rot13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnobqrstuvwxyz";
+	char ROT13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	for (i =0; s[i] != '\0'; i++)
 	{
-		for (i = 0; i <= 52; i++)
+		for (i = 0; j < 52; j++)
 		{
-			if (*s == rot13[i])
+			if (s[i] == rot13[j])
 			{
-				*s = ROT13[i];
+				s[i] = ROT13[j];
 				break;
 			}
 		}
-		s++;
 	}
-	return (ptr);
+	return (s);
 }
