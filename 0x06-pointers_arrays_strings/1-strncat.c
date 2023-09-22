@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: pointer to destnation input
  * @src: pointer to source input
  * @n: most numbers of bytes from @src
